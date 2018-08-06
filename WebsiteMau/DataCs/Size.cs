@@ -6,13 +6,8 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
-    /// <summary>
-    /// Class thực hiện truy vấn liên quan đế bảng Size
-    /// </summary>
     public class Size
     {
         #region Phương thức xóa Size
@@ -33,7 +28,7 @@ namespace WebsiteData
         /// Phương thức thêm mới Size vào bảng Size
         /// </summary>
         /// <param name="tensize"></param>
-        
+
         public static void Size_Inser(string tensize, string ret)
         {
             SqlCommand cmd = new SqlCommand("size_inser");
@@ -50,7 +45,7 @@ namespace WebsiteData
         /// </summary>
         /// <param name="sizeid"></param>
         /// <param name="tensize"></param>
-       
+
         public static void Size_Update(string sizeid, string tensize)
         {
             SqlCommand cmd = new SqlCommand("size_update");

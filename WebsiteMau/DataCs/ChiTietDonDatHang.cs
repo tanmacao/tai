@@ -6,7 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
     public class ChiTietDonDatHang
     {
@@ -96,9 +96,3 @@ namespace WebsiteData
         #endregion
     }
 }
-
-
-
-
-
-

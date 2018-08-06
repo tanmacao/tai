@@ -6,13 +6,8 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
-    /// <summary>
-    /// Summary description for Menu
-    /// </summary>
     public class Menu
     {
         #region Phương thức xóa menu theo mã menu truyền vào
@@ -38,7 +33,8 @@ namespace WebsiteData
         /// <param name="mamenucha"></param>
         /// <param name="thutumenu"></param>
         /// <param name="ret"></param>
-        public static void Menu_Inser(string tenmenu,string lienket,string mamenucha,string thutumenu, string ret)        {
+        public static void Menu_Inser(string tenmenu, string lienket, string mamenucha, string thutumenu, string ret)
+        {
             SqlCommand cmd = new SqlCommand("menu_inser");
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@tenmenu", tenmenu);
@@ -59,7 +55,7 @@ namespace WebsiteData
         /// <param name="lienket"></param>
         /// <param name="mamenucha"></param>
         /// <param name="thutumenu"></param>
-        public static void Menu_Update(string mamenu,string tenmenu,string lienket,string mamenucha,string thutumenu)
+        public static void Menu_Update(string mamenu, string tenmenu, string lienket, string mamenucha, string thutumenu)
         {
             SqlCommand cmd = new SqlCommand("menu_update");
             cmd.CommandType = CommandType.StoredProcedure;

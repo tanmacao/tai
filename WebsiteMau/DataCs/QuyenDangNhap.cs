@@ -6,13 +6,8 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteDatas
+namespace WebsiteMau.DataCs
 {
-    /// <summary>
-    /// Class thực hiện truy vấn liên quan đế bảng QuyenDangNhap
-    /// </summary>
     public class QuyenDangNhap
     {
         #region Phương thức xóa Quyendangnhap

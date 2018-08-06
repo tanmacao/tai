@@ -10,6 +10,7 @@ namespace WebsiteMau.cms.admin.SanPham
     public partial class SanPhamControl : System.Web.UI.UserControl
     {
         string modulphu = "";
+       
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.QueryString["modulphu"] != null)
@@ -17,6 +18,7 @@ namespace WebsiteMau.cms.admin.SanPham
 
             switch (modulphu)
             {
+          
                 case "qldm":
                     plLaod.Controls.Add(LoadControl("QuanLyDanhMuc/DanhMucControl.ascx"));
                     break;

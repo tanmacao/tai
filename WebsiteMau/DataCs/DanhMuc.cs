@@ -6,13 +6,8 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteMau.Data
+namespace WebsiteMau.DataCs
 {
-    /// <summary>
-    /// Summary description for DanhMuc
-    /// </summary>
     public class DanhMuc
     {
 
@@ -39,14 +34,14 @@ namespace WebsiteMau.Data
         /// <param name="thutu"></param>
         /// <param name="maDMcha"></param>
         /// <param name="ret"></param>
-        public static void Danhmuc_Inser(string tendm,string anhdaidien,string thutu,string maDMcha, string ret)
+        public static void Danhmuc_Inser(string tendm, string anhdaidien, string thutu, string maDMcha, string ret)
         {
             SqlCommand cmd = new SqlCommand("danhmuc_inser");
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@tendm", tendm);
             cmd.Parameters.AddWithValue("@anhdaidien", anhdaidien);
             cmd.Parameters.AddWithValue("@thutu", thutu);
-            cmd.Parameters.AddWithValue("@maDMcha", maDMcha);           
+            cmd.Parameters.AddWithValue("@maDMcha", maDMcha);
             cmd.Parameters.AddWithValue("@ret", ret);
             Database.ExcuteNonQuery(cmd);
         }
@@ -69,7 +64,7 @@ namespace WebsiteMau.Data
             cmd.Parameters.AddWithValue("@tendm", tendm);
             cmd.Parameters.AddWithValue("@anhdaidien", anhdaidien);
             cmd.Parameters.AddWithValue("@thutu", thutu);
-            cmd.Parameters.AddWithValue("@maDMcha", maDMcha);      
+            cmd.Parameters.AddWithValue("@maDMcha", maDMcha);
             Database.ExcuteNonQuery(cmd);
         }
 

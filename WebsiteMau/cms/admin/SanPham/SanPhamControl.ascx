@@ -18,13 +18,13 @@
         <div class="head">Thêm mới</div>
 
         <ul>
-            <li><a class="<%=DanhDau("SanPham","qldm","ThemMoi") %>" href="Admin.aspx?modul=sp&modulphu=qldm&thaotac=TheMoi">Danh mục sản phẩm</a></li>
-            <li><a class="<%=DanhDau("SanPham","qlsp","ThemMoi") %>" href="Admin.aspx?modul=sp&modulphu=qlsp&thaotac=TheMoi">Danh sách sản phẩm</a></li>
-            <li><a class="<%=DanhDau("SanPham","qlm","ThemMoi") %>" href="Admin.aspx?modul=sp&modulphu=qlm&thaotac=TheMoi">Màu sản phẩm</a></li>
-            <li><a class="<%=DanhDau("SanPham","qlcl","ThemMoi") %>" href="Admin.aspx?modul=sp&modulphu=qlcl&thaotac=TheMoi">Chất liệu sản phẩm</a></li>
-            <li><a class="<%=DanhDau("SanPham","qls","ThemMoi") %>" href="Admin.aspx?modul=sp&modulphu=qls&thaotac=TheMoi">Size sản phẩm</a></li>
-            <li><a class="<%=DanhDau("SanPham","qlnsp","ThemMoi") %>" href="Admin.aspx?modul=sp&modulphu=qlnsp&thaotac=TheMoi">Nhóm sản phẩm</a></li>
-            <li><a class="<%=DanhDau("SanPham","pdg","ThemMoi") %>" href="Admin.aspx?modul=sp&modulphu=pdgp&thaotac=TheMoi">Phiên đấu giá</a></li>
+            <li><a class="<%=DanhDau("SanPham","qldm","ThemMoi") %>" href="Admin.aspx?modul=sp&modulphu=qldm&thaotac=ThemMoi">Danh mục sản phẩm</a></li>
+            <li><a class="<%=DanhDau("SanPham","qlsp","ThemMoi") %>" href="Admin.aspx?modul=sp&modulphu=qlsp&thaotac=ThemMoi">Danh sách sản phẩm</a></li>
+            <li><a class="<%=DanhDau("SanPham","qlm","ThemMoi") %>" href="Admin.aspx?modul=sp&modulphu=qlm&thaotac=ThemMoi">Màu sản phẩm</a></li>
+            <li><a class="<%=DanhDau("SanPham","qlcl","ThemMoi") %>" href="Admin.aspx?modul=sp&modulphu=qlcl&thaotac=ThemMoi">Chất liệu sản phẩm</a></li>
+            <li><a class="<%=DanhDau("SanPham","qls","ThemMoi") %>" href="Admin.aspx?modul=sp&modulphu=qls&thaotac=ThemMoi">Size sản phẩm</a></li>
+            <li><a class="<%=DanhDau("SanPham","qlnsp","ThemMoi") %>" href="Admin.aspx?modul=sp&modulphu=qlnsp&thaotac=ThemMoi">Nhóm sản phẩm</a></li>
+            <li><a class="<%=DanhDau("SanPham","pdg","ThemMoi") %>" href="Admin.aspx?modul=sp&modulphu=pdgp&thaotac=ThemMoi">Phiên đấu giá</a></li>
         </ul>
     </div>    
     <div class="cotPhai">        

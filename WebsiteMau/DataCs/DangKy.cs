@@ -6,9 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
     /// <summary>
     /// Summary description for DangKy
@@ -43,7 +41,7 @@ namespace WebsiteData
         /// <param name="gioitinhdk"></param>
         /// <param name="maquyen"></param>
         /// <param name="ret"></param>
-        public static void Dangky_Inser(string tendangnhap,string matkhau,string emaildk,string diachidk,string tendaydu,string cauhoibaomat,string ngaysinh,string gioitinhdk,string maquyen, string ret)
+        public static void Dangky_Inser(string tendangnhap, string matkhau, string emaildk, string diachidk, string tendaydu, string cauhoibaomat, string ngaysinh, string gioitinhdk, string maquyen, string ret)
         {
             SqlCommand cmd = new SqlCommand("dangky_inser");
             cmd.CommandType = CommandType.StoredProcedure;
@@ -141,4 +139,3 @@ namespace WebsiteData
         #endregion
     }
 }
-

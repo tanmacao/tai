@@ -6,13 +6,8 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
-    /// <summary>
-    /// Summary description for PhienDauGia
-    /// </summary>
     public class PhienDauGia
     {
         #region Phương thức xóa Phiên đấu giá
@@ -21,7 +16,7 @@ namespace WebsiteData
         /// <param name="masp">mã phiên đấu giá cần xóa</param>
         public static void PhienDauGia_Delete(string MaPhienDG)
         {
-           SqlCommand cmd = new SqlCommand("phiendaugia_delete");
+            SqlCommand cmd = new SqlCommand("phiendaugia_delete");
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@MaPhienDG", MaPhienDG);
             Database.ExcuteNonQuery(cmd);
@@ -32,10 +27,10 @@ namespace WebsiteData
         /// <summary>
         /// Phương thức thêm mới phiên đấu giá vào bảng phiên đấu giá
         /// </summary>
-    
-        public static void PhienDauGia_Inser(string ThoiGianBatDau,string ThoigGianKetThuc, string MaSP, string GiaDeXuat, string ret)
+
+        public static void PhienDauGia_Inser(string ThoiGianBatDau, string ThoigGianKetThuc, string MaSP, string GiaDeXuat, string ret)
         {
-           SqlCommand cmd = new SqlCommand("phiendaugia_inser");
+            SqlCommand cmd = new SqlCommand("phiendaugia_inser");
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@ThoiGianBatDau", ThoiGianBatDau);
             cmd.Parameters.AddWithValue("@ThoigGianKetThuc", ThoigGianKetThuc);
@@ -48,14 +43,14 @@ namespace WebsiteData
         #endregion
 
         #region  Phương thức chỉnh sửa thông tin một phiên đấu giá
-       /// <summary>
+        /// <summary>
         /// Phương thức chỉnh sửa thông tin một phiên đấu giá
-       /// </summary>
-       
+        /// </summary>
+
 
         public static void PhienDauGia_Update(string MaPhienDG, string ThoiGianBatDau, string ThoiGianKetThuc, string MaSP, string GiaDeXuat)
         {
-           SqlCommand cmd = new SqlCommand("phiendaugia_update");
+            SqlCommand cmd = new SqlCommand("phiendaugia_update");
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@MaPhienDG", MaPhienDG);
             cmd.Parameters.AddWithValue("@ThoiGianBatDau", ThoiGianBatDau);
@@ -75,7 +70,7 @@ namespace WebsiteData
         /// <returns></returns>
         public static DataTable Thongtin_PhienDauGia()
         {
-           SqlCommand cmd = new SqlCommand("thongtin_phiendaugia");
+            SqlCommand cmd = new SqlCommand("thongtin_phiendaugia");
             cmd.CommandType = CommandType.StoredProcedure;
             return Database.GetData(cmd);
         }
@@ -88,7 +83,7 @@ namespace WebsiteData
         /// <returns></returns>
         public static DataTable Thongtin_PhienDauGia_by_id(string MaPhienDG)
         {
-           SqlCommand cmd = new SqlCommand("thongtin_phiendaugia_by_id");
+            SqlCommand cmd = new SqlCommand("thongtin_phiendaugia_by_id");
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@MaPhienDG", @MaPhienDG);
             return Database.GetData(cmd);

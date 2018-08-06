@@ -13,21 +13,12 @@ namespace WebsiteMau.cms.admin.SanPham.QuanLyDanhMuc {
     public partial class DanhMucControl {
         
         /// <summary>
-        /// plLoad control.
+        /// plLoadControl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder plLoad;
-        
-        /// <summary>
-        /// DanhMuc_ThemMoi control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::WebsiteMau.cms.admin.SanPham.QuanLyDanhMuc.DanhMuc_ThemMoi DanhMuc_ThemMoi;
+        protected global::System.Web.UI.WebControls.PlaceHolder plLoadControl;
     }
 }

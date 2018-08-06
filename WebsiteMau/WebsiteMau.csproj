@@ -206,6 +206,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\cssAdmin.css" />
+    <Content Include="Content\image\delete.png" />
+    <Content Include="Content\image\edit.png" />
+    <Content Include="Content\image\show.png" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -213,6 +216,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="pic\AnhSanPham\1434384946-debdong-vat-truoc-binh-minh-hoang-hon-6.jpg" />
+    <Content Include="pic\AnhSanPham\ao-nu1.jpg" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -362,28 +367,27 @@
     <Compile Include="cms\admin\TaiKhoan\TaiKhoanControl.ascx.designer.cs">
       <DependentUpon>TaiKhoanControl.ascx</DependentUpon>
     </Compile>
-    <Content Include="App_Data\Data\ChatLieu.cs" />
-    <Content Include="App_Data\Data\ChiTietDonDatHang.cs" />
-    <Content Include="App_Data\Data\ChiTietDonHang.cs" />
-    <Content Include="App_Data\Data\DangKy.cs" />
-    <Content Include="App_Data\Data\DanhMuc.cs" />
-    <Content Include="App_Data\Data\DanhMucTin.cs" />
-    <Content Include="App_Data\Data\DonDatHang.cs" />
-    <Content Include="App_Data\Data\HoaDon.cs" />
-    <Content Include="App_Data\Data\KhachHang.cs" />
-    <Content Include="App_Data\Data\LuotDauGia.cs" />
-    <Content Include="App_Data\Data\Mau.cs" />
-    <Content Include="App_Data\Data\Menu.cs" />
-    <Content Include="App_Data\Data\NhanVien.cs" />
-    <Content Include="App_Data\Data\NhomQuangCao.cs" />
-    <Content Include="App_Data\Data\NhomSanPham.cs" />
-    <Content Include="App_Data\Data\PhienDauGia.cs" />
-    <Content Include="App_Data\Data\QuangCao.cs" />
-    <Content Include="App_Data\Data\QuyenDangNhap.cs" />
-    <Content Include="App_Data\Data\SanPham.cs" />
-    <Content Include="App_Data\Data\Size.cs" />
-    <Content Include="App_Data\Data\TinTuc.cs" />
-    <Compile Include="App_Data\Data\ChatLieuCustomize.cs" />
+    <Compile Include="DataCs\ChatLieu.cs" />
+    <Compile Include="DataCs\ChiTietDonDatHang.cs" />
+    <Compile Include="DataCs\ChiTietDonHang.cs" />
+    <Compile Include="DataCs\DangKy.cs" />
+    <Compile Include="DataCs\DanhMuc.cs" />
+    <Compile Include="DataCs\DanhMucTin.cs" />
+    <Compile Include="DataCs\DonDatHang.cs" />
+    <Compile Include="DataCs\HoaDon.cs" />
+    <Compile Include="DataCs\KhachHang.cs" />
+    <Compile Include="DataCs\LuocDauGia.cs" />
+    <Compile Include="DataCs\Mau.cs" />
+    <Compile Include="DataCs\Menu.cs" />
+    <Compile Include="DataCs\NhanVien.cs" />
+    <Compile Include="DataCs\NhomQuangCao.cs" />
+    <Compile Include="DataCs\NhomSanPham.cs" />
+    <Compile Include="DataCs\PhienDauGia.cs" />
+    <Compile Include="DataCs\QuangCao.cs" />
+    <Compile Include="DataCs\QuyenDangNhap.cs" />
+    <Compile Include="DataCs\SanPham.cs" />
+    <Compile Include="DataCs\Size.cs" />
+    <Compile Include="DataCs\TinTuc.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -405,13 +409,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Appcode\" />
     <Folder Include="cms\admin\KhachHang\" />
     <Folder Include="cms\admin\Menu\" />
     <Folder Include="cms\admin\QuangCao\" />
     <Folder Include="cms\admin\TinTuc\" />
     <Folder Include="cms\display\" />
-    <Folder Include="pic\AnhSanPham\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

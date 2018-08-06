@@ -6,7 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
     public class ChiTietDonHang
     {
@@ -19,7 +19,7 @@ namespace WebsiteData
         /// <param name="soLuong"></param>
         /// <param name="donGia"></param>
         /// <param name="ret"></param>
-        
+
         public static void ChiTietDonHang_Inert(string masp, string maHoaDon, string soLuong, string donGia, string ret)
         {
             SqlCommand cmd = new SqlCommand("chitietdonhang_inser");
@@ -39,7 +39,7 @@ namespace WebsiteData
         /// </summary>
         /// <param name="masp"></param>
         /// <param name="maHoaDon"></param>
-        public static void ChiTietDonHang_Delete(string masp,string maHoaDon)
+        public static void ChiTietDonHang_Delete(string masp, string maHoaDon)
         {
             SqlCommand cmd = new SqlCommand("chitietdonhang_delete");
             cmd.CommandType = CommandType.StoredProcedure;

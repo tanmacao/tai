@@ -6,15 +6,11 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
-    /// <summary>
-    /// Summary description for QuangCao
-    /// </summary>
     public class QuangCao
     {
+
         #region Phương thức xóa Quangcao theo mã Quangcao truyền vào
         /// <summary>
         /// Phương thức xóa Quangcao theo mã Quangcao truyền vào
@@ -40,7 +36,7 @@ namespace WebsiteData
         /// <param name="thutuqc"></param>
         /// <param name="nhomqcID"></param>
         /// <param name="ret"></param>
-        public static void Quangcao_Inser(string tenqc, string loaiqc, string anhqc, 
+        public static void Quangcao_Inser(string tenqc, string loaiqc, string anhqc,
             string lienket, string thutuqc, string nhomqcID, string ret)
         {
             SqlCommand cmd = new SqlCommand("quangcao_inser");
@@ -68,8 +64,8 @@ namespace WebsiteData
         /// <param name="lienket"></param>
         /// <param name="thutuqc"></param>
         /// <param name="nhomquangcaoid"></param>
-      
-        public static void Quangcao_Update(string quangcaoid,string tenquangcao,string loaiqc,string anhqc,string lienket,string thutuqc,string nhomquangcaoid)
+
+        public static void Quangcao_Update(string quangcaoid, string tenquangcao, string loaiqc, string anhqc, string lienket, string thutuqc, string nhomquangcaoid)
         {
             SqlCommand cmd = new SqlCommand("quangcao_update");
             cmd.CommandType = CommandType.StoredProcedure;

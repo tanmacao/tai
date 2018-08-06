@@ -6,13 +6,8 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
-    /// <summary>
-    /// Summary description for DonDatHang
-    /// </summary>
     public class DonDatHang
     {
         #region Phương thức xóa đơn đặt hàng theo mã đơn đặt hàng truyền vào
@@ -30,17 +25,17 @@ namespace WebsiteData
         #endregion
 
         #region Phương thức thêm mới đơn đặt hàng vào bảng đơn đặt hàng
-       /// <summary>
+        /// <summary>
         ///  Phương thức thêm mới đơn đặt hàng vào bảng đơn đặt hàng
-       /// </summary>
-       /// <param name="ngaytao"></param>
-       /// <param name="thanhtienhd"></param>
-       /// <param name="tinhtrangdonhang"></param>
-       /// <param name="makh"></param>
-       /// <param name="tenkh"></param>
-       /// <param name="sdtkh"></param>
-       /// <param name="emailkh"></param>
-       /// <param name="ret"></param>
+        /// </summary>
+        /// <param name="ngaytao"></param>
+        /// <param name="thanhtienhd"></param>
+        /// <param name="tinhtrangdonhang"></param>
+        /// <param name="makh"></param>
+        /// <param name="tenkh"></param>
+        /// <param name="sdtkh"></param>
+        /// <param name="emailkh"></param>
+        /// <param name="ret"></param>
         public static void Dondathang_Inser(string ngaytao, string thanhtienhd, string tinhtrangdonhang, string makh, string tenkh, string sdtkh, string emailkh, string ret)
         {
             SqlCommand cmd = new SqlCommand("dondathang_inser");

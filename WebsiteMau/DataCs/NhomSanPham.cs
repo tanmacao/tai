@@ -6,13 +6,8 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
-    /// <summary>
-    /// Summary description for NhomSanPham
-    /// </summary>
     public class NhomSanPham
     {
         #region Phương thức xóa Nhomsanpham theo mã Nhomsanpham truyền vào
@@ -38,7 +33,7 @@ namespace WebsiteData
         /// <param name="thutu"></param>
         /// <param name="soSPhienthi"></param>
         /// <param name="ret"></param>
-        public static void Nhomsanpham_Inser(string tennhom,string anhdaidien,string thutu,string soSPhienthi,string ret)
+        public static void Nhomsanpham_Inser(string tennhom, string anhdaidien, string thutu, string soSPhienthi, string ret)
         {
             SqlCommand cmd = new SqlCommand("nhomsanpham_inser");
             cmd.CommandType = CommandType.StoredProcedure;
@@ -60,7 +55,7 @@ namespace WebsiteData
         /// <param name="anhdadien"></param>
         /// <param name="thutu"></param>
         /// <param name="solanhienthi"></param>
-        public static void Nhomsanpham_Update(string nhomid,string tennhom, string anhdadien,string thutu,string solanhienthi)
+        public static void Nhomsanpham_Update(string nhomid, string tennhom, string anhdadien, string thutu, string solanhienthi)
         {
             SqlCommand cmd = new SqlCommand("nhomsanpham_update");
             cmd.CommandType = CommandType.StoredProcedure;

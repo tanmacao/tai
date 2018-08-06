@@ -6,9 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
     /// <summary>
     /// Summary description for HoaDon
@@ -40,7 +38,7 @@ namespace WebsiteData
         /// <param name="makh"></param>
         /// <param name="tenkh"></param>
         /// <param name="ret"></param>
-        public static void Hoadon_Inser(string ngaylap,string thanhtien,string manv,string tennv,string makh ,string tenkh, string ret)
+        public static void Hoadon_Inser(string ngaylap, string thanhtien, string manv, string tennv, string makh, string tenkh, string ret)
         {
             SqlCommand cmd = new SqlCommand("hoadon_inser");
             cmd.CommandType = CommandType.StoredProcedure;
@@ -67,7 +65,7 @@ namespace WebsiteData
         /// <param name="tennv"></param>
         /// <param name="makh"></param>
         /// <param name="tenkh"></param>
-        public static void Hoadon_Update(string mahoadon,string ngaylap,string thanhtien,string manv,string tennv,string makh ,string tenkh)
+        public static void Hoadon_Update(string mahoadon, string ngaylap, string thanhtien, string manv, string tennv, string makh, string tenkh)
         {
             SqlCommand cmd = new SqlCommand("hoadon_update");
             cmd.CommandType = CommandType.StoredProcedure;

@@ -6,13 +6,8 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
-    /// <summary>
-    /// Summary description for KhachHang
-    /// </summary>
     public class KhachHang
     {
         #region Phương thức xóa Khachang theo mã Khachang truyền vào
@@ -39,7 +34,7 @@ namespace WebsiteData
         /// <param name="emailkh"></param>
         /// <param name="matkhau"></param>
         /// <param name="ret"></param>
-        public static void Khachang_Inser(string tenkh ,string diachikh ,string sdtkh ,string emailkh ,string matkhau, string ret)
+        public static void Khachang_Inser(string tenkh, string diachikh, string sdtkh, string emailkh, string matkhau, string ret)
         {
             SqlCommand cmd = new SqlCommand("khachang_inser");
             cmd.CommandType = CommandType.StoredProcedure;
@@ -63,7 +58,7 @@ namespace WebsiteData
         /// <param name="sdtkh"></param>
         /// <param name="emailkh"></param>
         /// <param name="matkhau"></param>
-        public static void Khachang_Update(string makh ,string tenkh,string diachikh ,string sdtkh ,string emailkh, string matkhau)
+        public static void Khachang_Update(string makh, string tenkh, string diachikh, string sdtkh, string emailkh, string matkhau)
         {
             SqlCommand cmd = new SqlCommand("khachang_update");
             cmd.CommandType = CommandType.StoredProcedure;

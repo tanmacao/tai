@@ -6,13 +6,8 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
-    /// <summary>
-    /// Summary description for NhomQuangCao
-    /// </summary>
     public class NhomQuangCao
     {
         #region Phương thức xóa Nhomquangcao theo mã Nhomquangcao truyền vào
@@ -38,7 +33,7 @@ namespace WebsiteData
         /// <param name="thutunhomqc"></param>
         /// <param name="anhdaidienqc"></param>
         /// <param name="ret"></param>
-        public static void Nhomquangcao_Inser(string tennhomqc,string vitriqc,string thutunhomqc,string anhdaidienqc, string ret)
+        public static void Nhomquangcao_Inser(string tennhomqc, string vitriqc, string thutunhomqc, string anhdaidienqc, string ret)
         {
             SqlCommand cmd = new SqlCommand("nhomquangcao_inser");
             cmd.CommandType = CommandType.StoredProcedure;
@@ -60,7 +55,7 @@ namespace WebsiteData
         /// <param name="vitriqc"></param>
         /// <param name="thutunhomqc"></param>
         /// <param name="anhdaidienqc"></param>
-        public static void Nhomquangcao_Update(string nhomquangcaoid,string tennhomquangcao,string vitriqc,string thutunhomqc,string anhdaidienqc)
+        public static void Nhomquangcao_Update(string nhomquangcaoid, string tennhomquangcao, string vitriqc, string thutunhomqc, string anhdaidienqc)
         {
             SqlCommand cmd = new SqlCommand("nhomquangcao_update");
             cmd.CommandType = CommandType.StoredProcedure;

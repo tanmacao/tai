@@ -6,17 +6,12 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
-    /// <summary>
-    /// Summary description for LuotDauGia
-    /// </summary>
-    public class LuotDauGia
+    public class LuocDauGia
     {
         #region Phương thức xóa Lượt đấu giá
-                
+
         public static void LuotDauGia_Delete(string MaLuotDG)
         {
             SqlCommand cmd = new SqlCommand("luotdaugia_delete");
@@ -30,7 +25,7 @@ namespace WebsiteData
         /// <summary>
         /// Phương thức thêm mới lượt đấu giá vào bảng lượt đấu giá
         /// </summary>
-    
+
         public static void LuotDauGia_Inser(string ThoiGianDG, string GiaDuaRa, string MaXacNhan, string MaKH, string MaPhienDG, string ret)
         {
             SqlCommand cmd = new SqlCommand("luotdaugia_inser");
@@ -47,9 +42,9 @@ namespace WebsiteData
         #endregion
 
         #region  Phương thức chỉnh sửa thông tin một lượt đấu giá
-       /// <summary>
+        /// <summary>
         /// Phương thức chỉnh sửa thông tin một lượt đấu giá
-       /// </summary>
+        /// </summary>
 
         public static void LuotDauGia_Update(string MaLuotDG, string ThoiGianDG, string GiaDuaRa, string MaXacNhan, string MaKH, string MaPhienDG)
         {

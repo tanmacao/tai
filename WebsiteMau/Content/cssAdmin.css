@@ -61,3 +61,35 @@ a:hover{color:#f75d75}
 .FormThemMoi .btThemMoi:hover{background:#77C7FF}
 
 .FormThemMoi .thongBaoTaoThanhCong{color:red; font-size:16px; padding-bottom:20px; font-weight:bold; text-align:center}
+
+
+
+
+/*css trang hiện thị các danh mục sản phẩm */
+.KhungChuaBan{padding:5px}
+.KhungChuaBan .tbDanhMuc{width:100%
+                  ;border-collapse:collapse;
+                   border:solid 1px #dfdfdf ;
+}
+.KhungChuaBan .tbDanhMuc th,
+.KhungChuaBan .tbDanhMuc td{border:solid 1px #dfdfdf;
+                      padding:5px}
+.KhungChuaBan .tbDanhMuc .cotMa{width:50px}
+.KhungChuaBan .tbDanhMuc .cotAnh{width:120px}
+.KhungChuaBan .tbDanhMuc .cotThuTu{width:40px}
+.KhungChuaBan .tbDanhMuc .cotCongCu{width:120px}
+
+.KhungChuaBan .tbDanhMuc .cotMa1{width:50px; text-align:left}
+.KhungChuaBan .tbDanhMuc .cotTen1{width:auto; text-align:center}
+.KhungChuaBan .tbDanhMuc .cotAnh1{width:120px; text-align:center}
+.KhungChuaBan .tbDanhMuc .cotThuTu1{width:40px; text-align:center}
+.KhungChuaBan .tbDanhMuc .cotCongCu1{width:200px; text-align:right}
+
+.KhungChuaBan .tbDanhMuc .cotCongCu1 a{display:inline-block; width:24px; height:24px; background-position:center; background-repeat:no-repeat}
+.KhungChuaBan .tbDanhMuc .cotCongCu1 .dmcon{background-image:url(image/show.png)}
+.KhungChuaBan .tbDanhMuc .cotCongCu1 .dmsua{background-image:url(image/edit.png)}
+.KhungChuaBan .tbDanhMuc .cotCongCu1 .dmxoa{background-image:url(image/delete.png)}
+.KhungChuaBan .tbDanhMuc .cotAnh1{position:relative; z-index:1}
+.KhungChuaBan .tbDanhMuc .cotAnh1 .anhDaiDien{max-width:40px; max-height:40px}
+.KhungChuaBan .tbDanhMuc .cotAnh1 .anhDaiDienHover{max-width:200px; max-height:200px; display:none; position:absolute; z-index:1; top: 2px; left:80px }
+.KhungChuaBan .tbDanhMuc .cotAnh1 .anhDaiDien:hover .anhDaiDienHover{display:inline-block}

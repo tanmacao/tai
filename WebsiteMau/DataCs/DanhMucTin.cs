@@ -6,14 +6,10 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
-    /// <summary>
-    /// Class thực hiện truy vấn liên quan đế bảng Danh mục tin
-    /// </summary>
     public class DanhMucTin
+
     {
         #region Phương thức xóa danh mục tin theo mã danh mục tin truyền vào
         /// <summary>

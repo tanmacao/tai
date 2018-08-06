@@ -6,17 +6,10 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-namespace WebsiteMau.Data
+
+namespace WebsiteMau.DataCs
 {
-
-
-
-
-
-    /// <summary>
-    /// Summary description for ChatLieu
-    /// </summary>
-    public class ChatLieuCustomize
+    public class ChatLieu
     {
         #region Method Delete_Chất liệu sản phẩm
         /// <summary>

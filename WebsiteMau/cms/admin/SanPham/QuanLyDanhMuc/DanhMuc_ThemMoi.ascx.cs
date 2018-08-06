@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using WebsiteMau.Data;
+using WebsiteMau.DataCs;
 
 namespace WebsiteMau.cms.admin.SanPham.QuanLyDanhMuc
 {
@@ -13,13 +13,13 @@ namespace WebsiteMau.cms.admin.SanPham.QuanLyDanhMuc
     {
 
         protected void Page_Load(object sender, EventArgs e)
-        {   ChatLieuCustomize.         
+        {       
             if (!IsPostBack)
             {
                 LayDanhMucCha();
             }
         }
-        da
+      
         private void LayDanhMucCha()
         {
             
@@ -42,7 +42,7 @@ namespace WebsiteMau.cms.admin.SanPham.QuanLyDanhMuc
                     flAnhDaiDien.SaveAs(Server.MapPath("pic/AnhSanPham/")+ flAnhDaiDien.FileName);
                 }
             }
-            WebsiteData.DanhMuc.Danhmuc_Inser(txtTenDanhMuc.Text, flAnhDaiDien.FileName, txtThuTu.Text, ddlDanhMucCha.SelectedValue, "");
+           DanhMuc.Danhmuc_Inser(txtTenDanhMuc.Text, flAnhDaiDien.FileName, txtThuTu.Text, ddlDanhMucCha.SelectedValue, "");
 
             ltrThongBao.Text = "<div class='thongBaoTaoThanhCong'>Đã tạo danh mục >>" + txtTenDanhMuc.Text+"</div>";
 

@@ -6,13 +6,8 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
-    /// <summary>
-    /// Summary description for NhanVien
-    /// </summary>
     public class NhanVien
     {
         #region Phương thức xóa nhân viên theo mã nhân viên truyền vào
@@ -39,7 +34,7 @@ namespace WebsiteData
         /// <param name="sdtnv"></param>
         /// <param name="ngayvaolam"></param>
         /// <param name="ret"></param>
-        public static void Nhanvien_Inser(string tennv,string gioitinhnv,string diachinv,string sdtnv,string ngayvaolam, string ret)
+        public static void Nhanvien_Inser(string tennv, string gioitinhnv, string diachinv, string sdtnv, string ngayvaolam, string ret)
         {
             SqlCommand cmd = new SqlCommand("nhanvien_inser");
             cmd.CommandType = CommandType.StoredProcedure;
@@ -63,7 +58,7 @@ namespace WebsiteData
         /// <param name="diachinv"></param>
         /// <param name="sdtnv"></param>
         /// <param name="ngayvaolam"></param>
-        public static void Nhanvien_Update(string manv,string tennv,string gioitinhnv,string diachinv,string sdtnv,string ngayvaolam )
+        public static void Nhanvien_Update(string manv, string tennv, string gioitinhnv, string diachinv, string sdtnv, string ngayvaolam)
         {
             SqlCommand cmd = new SqlCommand("nhanvien_update");
             cmd.CommandType = CommandType.StoredProcedure;

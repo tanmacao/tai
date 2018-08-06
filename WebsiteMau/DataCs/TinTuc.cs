@@ -6,13 +6,8 @@ using System.Data;
 using System.Data.SqlClient;
 using Connet_ADO_DATA;
 
-
-
-namespace WebsiteData
+namespace WebsiteMau.DataCs
 {
-    /// <summary>
-    /// Class thực hiện truy vấn liên quan đế bảng 
-    /// </summary>
     public class TinTuc
     {
         #region Phương thức xóa tin tức theo mã tin tức truyền vào
@@ -57,9 +52,9 @@ namespace WebsiteData
             cmd.Parameters.AddWithValue("@ThuTu", ThuTu);
             cmd.Parameters.AddWithValue("@MaDM", MaDM);
             Database.ExcuteNonQuery(cmd);
-         
+
         }
-        
+
         #endregion
 
         #region  Phương thức chỉnh sửa thông tin một tin tức
